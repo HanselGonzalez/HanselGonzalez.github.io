@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hansell Gonzalez - Full-Stack Developer</title>
+    <title>Hansell Gonzalez - Mobile & Full Stack Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-blue-200">
@@ -18,7 +18,7 @@
         <header class="flex flex-col-reverse md:flex-row items-center md:justify-between gap-8 mb-16 bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
             <div class="text-center md:text-left flex-1">
                 <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-2">Hansell Josue Gonzalez Espino</h1>
-                <p class="text-xl text-blue-600 font-semibold mb-4">Computer Engineer | Full Stack Developer</p>
+                <p class="text-xl text-blue-600 font-semibold mb-4">Computer Engineer | Mobile & Full Stack Developer</p>
                 <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-slate-600">
                     <span class="flex items-center gap-1">📍 Choluteca, Honduras</span>
                     <span class="flex items-center gap-1">✉️ hansel.espino10@gmail.com</span>
@@ -31,7 +31,7 @@
             </div>
             <!-- PROFILE PHOTO -->
             <div class="w-40 h-40 md:w-48 md:h-48 shrink-0">
-                <img src="foto-perfil.jpg" alt="Hansell Gonzalez" class="w-full h-full object-cover rounded-full shadow-md border-4 border-white">
+                <img src="profile.JPG" alt="Hansell Gonzalez" class="w-full h-full object-cover rounded-full shadow-md border-4 border-white">
             </div>
         </header>
 
@@ -99,8 +99,13 @@
             <div class="grid md:grid-cols-2 gap-6">
                 <!-- SOLKY Project -->
                 <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
-                    <!-- SOLKY PHOTO -->
-                    <img src="foto-solky.jpg" alt="SOLKY App" class="w-full h-48 object-cover bg-slate-200">
+                    <!-- Carrusel de imágenes SOLKY -->
+                    <div class="flex overflow-x-auto gap-4 p-4 bg-slate-800 h-64 snap-x border-b border-slate-100 custom-scrollbar">
+                        <img src="SolkyImages/solky.jpg" alt="Logo Solky" class="h-full w-auto object-contain rounded snap-center">
+                        <img src="SolkyImages/Imagen.webp" alt="Solky Screen 1" class="h-full w-auto object-contain rounded snap-center">
+                        <img src="SolkyImages/imagen%202.webp" alt="Solky Screen 2" class="h-full w-auto object-contain rounded snap-center">
+                        <img src="SolkyImages/imgaen%203.webp" alt="Solky Screen 3" class="h-full w-auto object-contain rounded snap-center">
+                    </div>
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="text-xl font-bold text-slate-900">SOLKY</h3>
@@ -108,15 +113,20 @@
                         </div>
                         <p class="text-xs text-slate-400 mb-4">January 2024 - May 2024</p>
                         <p class="text-slate-600 text-sm mb-4 flex-1">
-                            Developed a mobile application in Kotlin, applying Clean Architecture, the MVVM pattern, and dependency injection with Hilt to ensure scalable and maintainable code. Programmed custom digital signage features by implementing an editing engine for text, positioning, fonts, colors, backgrounds, and animations. Implemented local data persistence using Room to save favorite designs and manage pre-designed templates. Optimized the application's interface and usability to deliver a dynamic, seamless, and intuitive experience on Android devices. Managed the complete release lifecycle and published the app on the Google Play Store.
+                            Developed a mobile application in Kotlin, applying Clean Architecture, the MVVM pattern, and dependency injection with Hilt to ensure scalable and maintainable code. Programmed custom digital signage features by implementing an editing engine for text, positioning, fonts, colors, backgrounds, and animations. Implemented local data persistence using Room. Managed the complete release lifecycle and published the app on the Google Play Store.
                         </p>
                     </div>
                 </div>
 
                 <!-- AURORA Project -->
                 <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
-                    <!-- AURORA PHOTO -->
-                    <img src="foto-aurora.jpg" alt="AURORA App" class="w-full h-48 object-cover bg-slate-200">
+                    <!-- Carrusel de imágenes AURORA -->
+                    <div class="flex overflow-x-auto gap-4 p-4 bg-slate-800 h-64 snap-x border-b border-slate-100 custom-scrollbar">
+                        <img src="AuroraImages/Logo-Aurora-2.png" alt="Logo Aurora" class="h-full w-auto object-contain rounded snap-center">
+                        <img src="AuroraImages/Telefono%201.png" alt="Aurora Screen 1" class="h-full w-auto object-contain rounded snap-center">
+                        <img src="AuroraImages/Telefono%202.png" alt="Aurora Screen 2" class="h-full w-auto object-contain rounded snap-center">
+                        <img src="AuroraImages/Telefono%203.png" alt="Aurora Screen 3" class="h-full w-auto object-contain rounded snap-center">
+                    </div>
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="text-xl font-bold text-slate-900">AURORA</h3>
@@ -124,7 +134,7 @@
                         </div>
                         <p class="text-xs text-slate-400 mb-4">June 2024 - July 2024</p>
                         <p class="text-slate-600 text-sm mb-4 flex-1">
-                            Developed a native Android mobile application in Kotlin tailored for the healthcare sector, implementing Clean Architecture. Programmed a smart clinical filter and an interactive digital wheel that processes pre-existing conditions to recommend safe contraceptive methods. Integrated a classification system based on standardized medical guidelines, displaying precise recommendation scales to support decision-making for healthcare professionals. Managed version control and published the project's source code on GitHub.
+                            Developed a native Android mobile application in Kotlin tailored for the healthcare sector, implementing Clean Architecture. Programmed a smart clinical filter and an interactive digital wheel that processes pre-existing conditions to recommend safe contraceptive methods based on standardized medical guidelines. Managed version control and published the project's source code on GitHub.
                         </p>
                     </div>
                 </div>
