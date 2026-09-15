@@ -1,158 +1,223 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hansell Gonzalez - Desarrollador Mobile & Full Stack</title>
+    <title>Hansell Gonzalez | Ingeniero de Software</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts para un toque más elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Outfit', sans-serif; }
+        /* Scrollbar personalizado para el carrusel y la página */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+        .glass-card { background: rgba(30, 41, 59, 0.4); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-blue-200">
+<body class="bg-slate-950 text-slate-300 antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
+    
+    <!-- Background brillos (Efecto elegante) -->
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/20 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[30%] h-[40%] bg-cyan-600/10 blur-[100px] rounded-full"></div>
+    </div>
+
     <div class="max-w-5xl mx-auto p-6 md:p-12">
         
-        <!-- Botón de Idioma (Apunta al inglés) -->
-        <div class="flex justify-end mb-8">
-            <a href="index.html" class="text-sm bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 py-1.5 px-4 rounded-full shadow-sm transition font-medium">🇺🇸 English</a>
+        <!-- Botón de Idioma (Apunta al index.html en inglés) -->
+        <div class="flex justify-end mb-10">
+            <a href="index.html" class="text-sm bg-slate-900 border border-slate-700 hover:bg-slate-800 text-slate-300 py-2 px-5 rounded-full shadow-lg transition-all duration-300 font-medium flex items-center gap-2">
+                <span>🇺🇸</span> English
+            </a>
         </div>
 
-        <!-- Encabezado con Foto de Perfil -->
-        <header class="flex flex-col-reverse md:flex-row items-center md:justify-between gap-8 mb-16 bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-            <div class="text-center md:text-left flex-1">
-                <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-2">Hansell Josue Gonzalez Espino</h1>
-                <p class="text-xl text-blue-600 font-semibold mb-4">Ingeniero en Computación | Desarrollador Mobile & Full Stack</p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-slate-600">
-                    <span class="flex items-center gap-1">📍 Choluteca, Honduras</span>
-                    <span class="flex items-center gap-1">✉️ hansel.espino10@gmail.com</span>
-                    <span class="flex items-center gap-1">📞 +504 32721638</span>
+        <!-- HERO SECTION -->
+        <header class="glass-card p-8 md:p-12 rounded-3xl shadow-2xl mb-16 relative overflow-hidden">
+            <div class="flex flex-col-reverse md:flex-row items-center gap-10 relative z-10">
+                <div class="text-center md:text-left flex-1">
+                    <p class="text-cyan-400 font-medium tracking-widest uppercase text-sm mb-3">Hola, soy</p>
+                    <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight">Hansell <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Gonzalez</span></h1>
+                    <p class="text-xl md:text-2xl text-slate-400 font-light mb-6">Ingeniero en Computación | Desarrollador Mobile & Full Stack</p>
+                    
+                    <div class="flex flex-wrap justify-center md:justify-start gap-y-3 gap-x-6 text-sm text-slate-400 mb-8">
+                        <span class="flex items-center gap-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Choluteca, Honduras</span>
+                        <span class="flex items-center gap-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg> hansel.espino10@gmail.com</span>
+                        <span class="flex items-center gap-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg> +504 32721638</span>
+                    </div>
+
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="https://github.com/HanselGonzalez" target="_blank" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white py-2 px-6 rounded-lg transition-colors flex items-center gap-2">
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/hansell-gonzalez-17792b31a" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white py-2 px-6 rounded-lg transition-colors flex items-center gap-2 shadow-[0_0_15px_rgba(37,99,235,0.3)]">
+                            LinkedIn
+                        </a>
+                    </div>
                 </div>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-slate-600 mt-2">
-                    <a href="https://github.com/HanselGonzalez" target="_blank" class="text-blue-500 hover:underline">GitHub</a>
-                    <a href="https://linkedin.com/in/hansell-gonzalez-17792b31a" target="_blank" class="text-blue-500 hover:underline">LinkedIn</a>
+                
+                <!-- FOTO DE PERFIL con borde brillante -->
+                <div class="relative w-48 h-48 md:w-56 md:h-56 shrink-0 group">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-400 to-blue-600 rounded-full blur opacity-50 group-hover:opacity-75 transition duration-500"></div>
+                    <img src="profile.JPG" alt="Hansell Gonzalez" class="relative w-full h-full object-cover rounded-full border-2 border-slate-800 shadow-2xl z-10">
                 </div>
-            </div>
-            <!-- FOTO DE PERFIL -->
-            <div class="w-40 h-40 md:w-48 md:h-48 shrink-0">
-                <img src="profile.JPG" alt="Hansell Gonzalez" class="w-full h-full object-cover rounded-full shadow-md border-4 border-white">
             </div>
         </header>
 
-        <!-- Sobre mí -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-slate-800 border-b-2 border-blue-500 pb-2 mb-6 inline-block">Sobre mí</h2>
-            <p class="text-slate-600 leading-relaxed text-lg">
-                Ingeniero en Computación con una visión integral del ciclo de vida del software, enfocado en el desarrollo de aplicaciones móviles nativas (Android/Kotlin), plataformas web y arquitecturas backend con gestión de bases de datos. Mi perfil técnico se complementa con bases prácticas en redes, servidores y hardware, lo que me facilita entender el ecosistema tecnológico en su totalidad. Además, me destaco por mi capacidad para identificar necesidades reales y conceptualizar ideas desde cero, transformando esa creatividad en herramientas productivas que aportan un valor tangible a las personas.
-            </p>
-        </section>
+        <!-- DOS COLUMNAS: Sobre Mí & Educación -->
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <!-- Sobre Mí -->
+            <section class="glass-card p-8 rounded-2xl">
+                <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                    <span class="w-8 h-[2px] bg-cyan-500 inline-block"></span> Sobre mí
+                </h2>
+                <p class="text-slate-400 leading-relaxed">
+                    Ingeniero en Computación con una visión integral del ciclo de vida del software, enfocado en el desarrollo de aplicaciones móviles nativas (Android/Kotlin), plataformas web y arquitecturas backend con gestión de bases de datos. Mi perfil técnico se complementa con bases prácticas en redes, servidores y hardware, lo que me facilita entender el ecosistema tecnológico en su totalidad. Además, me destaco por mi capacidad para identificar necesidades reales y conceptualizar ideas desde cero, transformando esa creatividad en herramientas productivas que aportan un valor tangible a las personas.
+                </p>
+            </section>
 
-        <!-- Educación -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-slate-800 border-b-2 border-blue-500 pb-2 mb-6 inline-block">Educación</h2>
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                <h3 class="text-lg font-bold text-slate-900">Ingeniería en Computación</h3>
-                <p class="text-blue-600 font-medium">Universidad Tecnológica de Honduras</p>
-                <p class="text-slate-500 text-sm">Graduado: Abril 2026 | Honores: Magna Cum Laude</p>
+            <!-- Educación e Idiomas -->
+            <div class="space-y-8">
+                <section class="glass-card p-8 rounded-2xl">
+                    <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="w-8 h-[2px] bg-cyan-500 inline-block"></span> Educación
+                    </h2>
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Ingeniería en Computación</h3>
+                        <p class="text-cyan-400 font-medium mb-1">Universidad Tecnológica de Honduras (UTH)</p>
+                        <p class="text-slate-500 text-sm">Graduado: Abril 2026 | Honores: Magna Cum Laude</p>
+                    </div>
+                </section>
+
+                <section class="glass-card p-8 rounded-2xl">
+                    <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="w-8 h-[2px] bg-cyan-500 inline-block"></span> Idiomas
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center border-b border-slate-700/50 pb-2">
+                            <span class="font-medium text-slate-200">Español</span>
+                            <span class="text-slate-500">Nativo</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-2">
+                            <span class="font-medium text-slate-200">Inglés</span>
+                            <span class="text-right">
+                                <span class="block text-cyan-400">Nivel B2 Intermedio-Alto</span>
+                                <a href="https://cert.efset.org/uTeyBC" target="_blank" class="text-xs text-slate-500 hover:text-cyan-300 transition-colors underline">Certificado EF SET (53/100)</a>
+                            </span>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>
 
-        <!-- Idiomas -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-slate-800 border-b-2 border-blue-500 pb-2 mb-6 inline-block">Idiomas</h2>
-            <div class="flex flex-wrap gap-4">
-                <div class="bg-white px-6 py-4 rounded-xl shadow-sm border border-slate-100 flex-1 min-w-[200px]">
-                    <h3 class="font-bold text-slate-900 text-lg">Español</h3>
-                    <p class="text-slate-600">Nativo</p>
-                </div>
-                <div class="bg-white px-6 py-4 rounded-xl shadow-sm border border-slate-100 flex-1 min-w-[200px]">
-                    <h3 class="font-bold text-slate-900 text-lg">Inglés</h3>
-                    <p class="text-slate-600">
-                        Nivel B2 Intermedio-Alto 
-                        (<a href="https://cert.efset.org/uTeyBC" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline font-medium">Certificado EF SET - 53/100</a>)
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Habilidades Técnicas -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-slate-800 border-b-2 border-blue-500 pb-2 mb-6 inline-block">Habilidades Técnicas</h2>
-            <div class="flex flex-wrap gap-2">
-                <span class="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-semibold border border-blue-100">Android / Kotlin / Room / Hilt / MVVM</span>
-                <span class="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-semibold border border-blue-100">Node.js / Express.js / REST APIs</span>
-                <span class="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-semibold border border-blue-100">React / JavaScript / HTML / CSS</span>
-                <span class="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-semibold border border-blue-100">PostgreSQL / MySQL / MongoDB</span>
-                <span class="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-semibold border border-blue-100">Git / GitHub / JWT / RBAC</span>
-                <span class="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-semibold border border-blue-100">Python / Java / C++</span>
+        <!-- Habilidades Técnicas (Estilo Badges de Neón) -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                <span class="w-8 h-[2px] bg-cyan-500 inline-block"></span> Habilidades Técnicas
+            </h2>
+            <div class="flex flex-wrap gap-3">
+                <span class="bg-blue-900/20 text-cyan-300 border border-cyan-500/30 px-5 py-2.5 rounded-xl text-sm font-medium hover:bg-blue-900/40 transition-colors">Android / Kotlin / Room / Hilt / MVVM</span>
+                <span class="bg-slate-800/50 text-slate-300 border border-slate-700 px-5 py-2.5 rounded-xl text-sm font-medium hover:bg-slate-700/50 transition-colors">Node.js / Express.js / REST APIs</span>
+                <span class="bg-slate-800/50 text-slate-300 border border-slate-700 px-5 py-2.5 rounded-xl text-sm font-medium hover:bg-slate-700/50 transition-colors">React / JavaScript / HTML / CSS</span>
+                <span class="bg-slate-800/50 text-slate-300 border border-slate-700 px-5 py-2.5 rounded-xl text-sm font-medium hover:bg-slate-700/50 transition-colors">PostgreSQL / MySQL / MongoDB</span>
+                <span class="bg-slate-800/50 text-slate-300 border border-slate-700 px-5 py-2.5 rounded-xl text-sm font-medium hover:bg-slate-700/50 transition-colors">Git / GitHub / JWT / RBAC</span>
+                <span class="bg-slate-800/50 text-slate-300 border border-slate-700 px-5 py-2.5 rounded-xl text-sm font-medium hover:bg-slate-700/50 transition-colors">Python / Java / C++</span>
             </div>
         </section>
 
         <!-- Experiencia Profesional -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-slate-800 border-b-2 border-blue-500 pb-2 mb-6 inline-block">Experiencia Profesional</h2>
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                <span class="w-8 h-[2px] bg-cyan-500 inline-block"></span> Experiencia Profesional
+            </h2>
             
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+            <div class="glass-card p-8 rounded-2xl relative overflow-hidden group hover:border-slate-600 transition-colors">
+                <div class="absolute top-0 left-0 w-1 h-full bg-cyan-500"></div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
                     <div>
-                        <h3 class="text-xl font-bold text-slate-900">Desarrollador Full Stack <span class="text-blue-600 font-medium text-base ml-2">@ ADEPES</span></h3>
-                        <p class="text-slate-500 text-sm">Choluteca, Honduras</p>
+                        <h3 class="text-2xl font-bold text-white mb-1">Desarrollador Full Stack</h3>
+                        <p class="text-cyan-400 font-medium">@ ADEPES</p>
                     </div>
-                    <span class="mt-2 md:mt-0 inline-block bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-xs font-semibold">Mayo 2025 - Julio 2025</span>
+                    <div class="mt-2 md:mt-0 text-right">
+                        <span class="inline-block bg-slate-800 border border-slate-700 text-slate-300 px-4 py-1.5 rounded-full text-xs font-semibold">Mayo 2025 - Julio 2025</span>
+                        <p class="text-slate-500 text-xs mt-2">Choluteca, Honduras</p>
+                    </div>
                 </div>
-                <ul class="list-disc list-outside ml-5 text-slate-600 space-y-2">
-                    <li>Diseñé y construí una API RESTful en Node.js desde cero, conectada a una base de datos relacional PostgreSQL, optimizando el manejo de datos del proyecto.</li>
-                    <li>Desarrollé una aplicación móvil nativa en Kotlin (aplicando MVVM y Clean Architecture), integrando Hilt, Retrofit y Room para asegurar una gestión robusta de datos locales y una experiencia de usuario fluida, mejorando significativamente la eficiencia y velocidad de recolección de datos para los técnicos de campo.</li>
-                    <li>Desplegué una plataforma web administrativa desarrollada con React y Axios para centralizar los datos registrados por los técnicos, implementando un sistema de visualización de manejo de presupuesto, registro de beneficiarios y reportes automatizados en tiempo real.</li>
-                    <li>Implementé protocolos de seguridad mediante tokens de autenticación y estricto control de acceso basado en roles (RBAC) para salvaguardar la API, las sesiones de usuario y la integridad general del sistema.</li>
+                <ul class="space-y-3 text-slate-400 text-sm md:text-base">
+                    <li class="flex items-start gap-3">
+                        <span class="text-cyan-500 mt-1">▹</span>
+                        <p>Diseñé y construí una API RESTful en Node.js desde cero, conectada a una base de datos relacional PostgreSQL, optimizando el manejo de datos del proyecto.</p>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-cyan-500 mt-1">▹</span>
+                        <p>Desarrollé una aplicación móvil nativa en Kotlin (aplicando MVVM y Clean Architecture), integrando Hilt, Retrofit y Room para asegurar una gestión robusta de datos locales y una experiencia de usuario fluida.</p>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-cyan-500 mt-1">▹</span>
+                        <p>Desplegué una plataforma web administrativa desarrollada con React y Axios para centralizar los datos registrados, implementando un sistema de visualización de presupuesto y reportes automatizados en tiempo real.</p>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-cyan-500 mt-1">▹</span>
+                        <p>Implementé protocolos de seguridad mediante tokens de autenticación y estricto control de acceso basado en roles (RBAC) para salvaguardar la API y la integridad general del sistema.</p>
+                    </li>
                 </ul>
             </div>
         </section>
 
-        <!-- Proyectos -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-slate-800 border-b-2 border-blue-500 pb-2 mb-6 inline-block">Proyectos Independientes</h2>
+        <!-- Proyectos Independientes -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                <span class="w-8 h-[2px] bg-cyan-500 inline-block"></span> Proyectos Independientes
+            </h2>
             
-            <div class="grid md:grid-cols-2 gap-6">
+            <div class="grid md:grid-cols-2 gap-8">
                 <!-- Proyecto SOLKY -->
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
+                <div class="glass-card rounded-2xl overflow-hidden flex flex-col group border border-slate-800 hover:border-slate-600 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
                     <!-- Carrusel de imágenes SOLKY -->
-                    <div class="flex overflow-x-auto gap-4 p-4 bg-slate-800 h-64 snap-x border-b border-slate-100 custom-scrollbar">
-                        <img src="SolkyImages/solky.jpg" alt="Logo Solky" class="h-full w-auto object-contain rounded snap-center">
-                        <img src="SolkyImages/Imagen.webp" alt="Solky Screen 1" class="h-full w-auto object-contain rounded snap-center">
-                        <img src="SolkyImages/imagen%202.webp" alt="Solky Screen 2" class="h-full w-auto object-contain rounded snap-center">
-                        <img src="SolkyImages/imgaen%203.webp" alt="Solky Screen 3" class="h-full w-auto object-contain rounded snap-center">
+                    <div class="flex overflow-x-auto gap-4 p-6 bg-slate-900/80 h-72 snap-x border-b border-slate-800">
+                        <img src="SolkyImages/solky.jpg" alt="Logo Solky" class="h-full w-auto object-contain rounded-lg snap-center shadow-lg">
+                        <img src="SolkyImages/Imagen.webp" alt="Solky Screen 1" class="h-full w-auto object-contain rounded-lg snap-center shadow-lg">
+                        <img src="SolkyImages/imagen%202.webp" alt="Solky Screen 2" class="h-full w-auto object-contain rounded-lg snap-center shadow-lg">
+                        <img src="SolkyImages/imgaen%203.webp" alt="Solky Screen 3" class="h-full w-auto object-contain rounded-lg snap-center shadow-lg">
                     </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-slate-900">SOLKY</h3>
-                            <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-bold">App Android</span>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-white">SOLKY</h3>
+                            <span class="bg-cyan-900/30 text-cyan-400 border border-cyan-800/50 px-3 py-1 rounded text-xs font-bold tracking-wider uppercase">App Android</span>
                         </div>
-                        <p class="text-xs text-slate-400 mb-4">Enero 2024 - Mayo 2024</p>
-                        <p class="text-slate-600 text-sm mb-4 flex-1">
-                            Desarrollo de una aplicación móvil en Kotlin, aplicando Clean Architecture, el patrón MVVM y la inyección de dependencias con Hilt para asegurar un código escalable y mantenible. Programación de funcionalidades personalizadas de letreros digitales mediante la implementación de un motor de edición de texto, posicionamiento, fuentes, colores, fondos y animaciones. Persistencia de datos locales implementada con Room. Gestión completa del ciclo de lanzamiento y publicación de la app en la Google Play Store.
+                        <p class="text-xs text-slate-500 font-mono mb-4">Ene 2024 - May 2024</p>
+                        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+                            Desarrollo de una aplicación móvil en Kotlin aplicando Clean Architecture, MVVM e inyección de dependencias con Hilt. Programación de un motor personalizado para edición de letreros digitales (texto, fuentes, colores, animaciones). Persistencia local con Room y gestión de lanzamiento en Google Play Store.
                         </p>
                     </div>
                 </div>
 
                 <!-- Proyecto AURORA -->
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
+                <div class="glass-card rounded-2xl overflow-hidden flex flex-col group border border-slate-800 hover:border-slate-600 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
                     <!-- Carrusel de imágenes AURORA -->
-                    <div class="flex overflow-x-auto gap-4 p-4 bg-slate-800 h-64 snap-x border-b border-slate-100 custom-scrollbar">
-                        <img src="AuroraImages/Logo-Aurora-2.png" alt="Logo Aurora" class="h-full w-auto object-contain rounded snap-center">
-                        <img src="AuroraImages/Telefono%201.png" alt="Aurora Screen 1" class="h-full w-auto object-contain rounded snap-center">
-                        <img src="AuroraImages/Telefono%202.png" alt="Aurora Screen 2" class="h-full w-auto object-contain rounded snap-center">
-                        <img src="AuroraImages/Telefono%203.png" alt="Aurora Screen 3" class="h-full w-auto object-contain rounded snap-center">
+                    <div class="flex overflow-x-auto gap-4 p-6 bg-slate-900/80 h-72 snap-x border-b border-slate-800">
+                        <img src="AuroraImages/Logo-Aurora-2.png" alt="Logo Aurora" class="h-full w-auto object-contain rounded-lg snap-center shadow-lg">
+                        <img src="AuroraImages/Telefono%201.png" alt="Aurora Screen 1" class="h-full w-auto object-contain rounded-lg snap-center shadow-lg">
+                        <img src="AuroraImages/Telefono%202.png" alt="Aurora Screen 2" class="h-full w-auto object-contain rounded-lg snap-center shadow-lg">
+                        <img src="AuroraImages/Telefono%203.png" alt="Aurora Screen 3" class="h-full w-auto object-contain rounded-lg snap-center shadow-lg">
                     </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-slate-900">AURORA</h3>
-                            <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-bold">App de Salud</span>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-white">AURORA</h3>
+                            <span class="bg-purple-900/30 text-purple-400 border border-purple-800/50 px-3 py-1 rounded text-xs font-bold tracking-wider uppercase">App de Salud</span>
                         </div>
-                        <p class="text-xs text-slate-400 mb-4">Junio 2024 - Julio 2024</p>
-                        <p class="text-slate-600 text-sm mb-4 flex-1">
-                            Desarrollo de una aplicación móvil nativa en Kotlin orientada al sector salud, implementando Clean Architecture. Programación de un filtro clínico inteligente y una rueda interactiva que procesa patologías para recomendar métodos anticonceptivos seguros basados en directrices médicas estandarizadas. Gestión de control de versiones y publicación del código fuente en GitHub.
+                        <p class="text-xs text-slate-500 font-mono mb-4">Jun 2024 - Jul 2024</p>
+                        <p class="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+                            Aplicación móvil nativa orientada al sector salud con Clean Architecture. Incluye un filtro clínico inteligente y una rueda interactiva para recomendar métodos anticonceptivos seguros según directrices médicas. Control de versiones y código abierto en GitHub.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+
+
 
     </div>
 </body>
